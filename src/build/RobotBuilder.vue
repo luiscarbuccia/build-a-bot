@@ -23,15 +23,30 @@
                 {{selectedRobot.head.title}}
                 <span v-show="selectedRobot.head.onSale" clase="sale"> Sale! </span>
             </div> -->
-            <PartSelector :parts="availableParts.heads" position="top" @partSelected="part => selectedRobot.head = part"/>
+            <PartSelector
+                :parts="availableParts.heads"
+                position="top"
+                @partSelected="part => selectedRobot.head = part"/>
         </div>
         <div class="middle-row">
-            <PartSelector :parts="availableParts.arms" position="left" @partSelected="part => selectedRobot.leftArm = part"/>
-            <PartSelector :parts="availableParts.torsos" position="center" @partSelected="part => selectedRobot.torso = part"/>
-            <PartSelector :parts="availableParts.arms" position="right" @partSelected="part => selectedRobot.rightArm = part"/>
+            <PartSelector
+                :parts="availableParts.arms"
+                position="left"
+                @partSelected="part => selectedRobot.leftArm = part"/>
+            <PartSelector
+                :parts="availableParts.torsos"
+                position="center"
+                @partSelected="part => selectedRobot.torso = part"/>
+            <PartSelector
+                :parts="availableParts.arms"
+                position="right"
+                @partSelected="part => selectedRobot.rightArm = part"/>
         </div>
         <div class="bottom-row">
-            <PartSelector :parts="availableParts.bases" position="bottom" @partSelected="part => selectedRobot.base = part"/>
+            <PartSelector
+                :parts="availableParts.bases"
+                position="bottom"
+                @partSelected="part => selectedRobot.base = part"/>
         </div>
         <div>
             <h1>Cart</h1>
@@ -45,7 +60,7 @@
                 <tbody>
                     <tr v-for="(robot, index) in cart" :key="index">
                         <td>{{robot.head.title}}</td>
-                        <td>{{robot.cost}}
+                        <td>{{robot.cost}}</td>
                     </tr>
                 </tbody>
             </table>
