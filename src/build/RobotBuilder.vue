@@ -2,7 +2,7 @@
     <div class="content">
         <div class="preview">
             <CollapsibleSection>
-                <div class="preview-content">
+                <!-- <div class="preview-content">
                     <div class="top-row">
                         <img :src="selectedRobot.head.src"/>
                     </div>
@@ -14,9 +14,9 @@
                     <div class="bottom-row">
                         <img :src="selectedRobot.base.src"/>
                     </div>
-                </div>
+                </div> -->
             </CollapsibleSection>
-            <button class="add-to-cart" @click="addToCard()"> Add to cart </button>
+            <button class="add-to-cart" @click="addToCart()"> Add to cart </button>
         </div>
         <div class="top-row">
             <!-- <div class="robot-name">

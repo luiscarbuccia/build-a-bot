@@ -11,19 +11,15 @@
       </nav>
     </header>
     <main>
-      <HomePage />
+      <router-view/>
     </main>
   </div>
 </template>
 
 <script>
-import HomePage from './home/HomePage.vue';
 
 export default {
   name: 'App',
-  components: {
-    HomePage,
-  },
 };
 </script>
 
