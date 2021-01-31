@@ -121,6 +121,7 @@ export default {
         + robot.torso.cost
         + robot.base.cost;
       this.cart.push({ ...robot, cost });
+      this.isAddedToCart = true;
     },
   },
 };
