@@ -104,8 +104,11 @@ export default {
   methods: {
     addToCart() {
       const robot = this.selectedRobot;
-      // eslint-disable-next-line max-len
-      const cost = robot.head.cost + robot.leftArm.cost + robot.rightArm.cost + robot.torso.cost + robot.base.cost;
+      const cost = robot.head.cost
+        + robot.leftArm.cost
+        + robot.rightArm.cost
+        + robot.torso.cost
+        + robot.base.cost;
       this.cart.push({ ...robot, cost });
     },
   },
