@@ -33,7 +33,10 @@ export default new Router({
   {
     path: '/parts/browse',
     name: 'BrowseParts',
-    component: BrowseParts,
+    components: {
+      default: BrowseParts,
+      sidebar: SidebarBuild,
+    },
     children: [
       {
         name: 'BrowseHeads',
